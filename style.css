@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    overflow: hidden; 
+    background-image: url("/football\ bg.jpg");/* Hide overflow to prevent scrollbars */
+    background-color: #f0f0f0; /* Set your preferred background color */
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: #a1c2d7; /* Set your preferred ball color */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    animation: bounce 4s linear infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        left: 20;
+        transform: translate(-50%, -50%);
+    }
+    25% {
+        top: 30;
+        left: 100%;
+        transform: translate(-50%, -50%);
+    }
+    40% {
+        top: 50%;
+        left: 30;
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    60% {
+        top: 100%;
+        left: 100%;
+        transform: translate(-50%, -50%);
+    }
+    
+    75% {
+        top: 100%;
+        left: 30;
+        transform: translate(-50%, -50%);
+    }
+}
